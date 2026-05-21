@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Morse - Comunicação que atravessou o tempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CÓDIGO MORSE</div>
+        <nav><ul></ul></nav>
+    </header>
+
+    <main>
+        <div class="content-left">
+            <h1>CÓDIGO<br>MORSE</h1>
+            <div class="underline-accent"></div>
+            <h2>COMUNICAÇÃO QUE ATRAVESSOU O TEMPO.</h2>
+            <p>Explore o código que conectou o mundo antes das palavras digitais. Aprenda, traduza e descubra sua história.</p>
+        </div>
+        <div class="visuals-right">
+            <div class="art-container">
+                <img src="tabela1.png" alt="Alfabeto Morse" class="tilt-box card-img" id="card1" data-default-rotate="-15">
+                <img src="tabela2.png" alt="Números Morse" class="tilt-box card-img" id="card2" data-default-rotate="5">
+                <img src="moneda1.png" alt="Moneda Send" class="tilt-box coin-img" id="coin1" data-default-rotate="0">
+                <img src="moneda2.png" alt="Moneda Receive" class="tilt-box coin-img" id="coin2" data-default-rotate="0">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#aprenda" class="feature">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM10 9h8v2h-8zm0 3h4v2h-4zm0-6h8v2h-8z"/></svg></div>
+            <div class="feature-text"><h4>APRENDA</h4><p>Guia completo para iniciantes.</p></div>
+        </a>
+        <a href="#traduza" class="feature">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg></div>
+            <div class="feature-text"><h4>TRADUZA</h4><p>Converta textos para Morse.</p></div>
+        </a>
+        <a href="#tabelas" class="feature">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M20 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 2v3H5V5h15zm-5 14h-5v-9h5v9zM5 10h3v9H5v-9zm15 9h-3v-9h3v9z"/></svg></div>
+            <div class="feature-text"><h4>TABELAS</h4><p>Alfabeto, números e símbolos.</p></div>
+        </a>
+        <a href="#historia" class="feature">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div>
+            <div class="feature-text"><h4>HISTÓRIA</h4><p>Conheça a origem do código.</p></div>
+        </a>
+    </footer>
+
+    <!-- APRENDA -->
+    <section id="aprenda" class="content-section">
+        <div class="section-header">
+            <span class="section-tag">GUIA BÁSICO</span>
+            <h2>APRENDA CÓDIGO MORSE</h2>
+            <div class="underline-accent"></div>
+            <p class="section-intro">O Código Morse representa letras, números e pontuação através de sequências de pontos (·) e traços (–). Qualquer pessoa pode aprender — basta prática.</p>
+        </div>
+        <div class="aprenda-grid">
+            <div class="aprenda-card">
+                <div class="aprenda-card-icon">·</div>
+                <h3>O PONTO (DIT)</h3>
+                <p>O ponto é o sinal mais curto. Na transmissão sonora, dura 1 unidade de tempo. Representa o início de muitos caracteres como a letra <strong>E</strong>.</p>
+            </div>
+            <div class="aprenda-card">
+                <div class="aprenda-card-icon">–</div>
+                <h3>O TRAÇO (DAH)</h3>
+                <p>O traço é 3× mais longo que o ponto. A letra <strong>T</strong> é apenas um traço. Combinado com pontos, forma todo o alfabeto.</p>
+            </div>
+            <div class="aprenda-card">
+                <div class="aprenda-card-icon">∿</div>
+                <h3>OS INTERVALOS</h3>
+                <p>Entre letras há uma pausa de 3 unidades. Entre palavras, 7 unidades. O ritmo dos intervalos é tão importante quanto os sinais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRADUTOR -->
+    <section id="traduza" class="content-section">
+        <div class="section-header">
+            <span class="section-tag">FERRAMENTA</span>
+            <h2>TRADUTOR MORSE</h2>
+            <div class="underline-accent"></div>
+            <p class="section-intro">Converta texto em Código Morse e vice-versa. Digite no campo abaixo e a tradução acontece em tempo real.</p>
+        </div>
+        <div class="translator-container">
+            <div class="translator-mode">
+                <button class="mode-btn active" id="btnTextToMorse">TEXTO → MORSE</button>
+                <button class="mode-btn" id="btnMorseToText">MORSE → TEXTO</button>
+            </div>
+            <div class="translator-panels">
+                <div class="translator-panel">
+                    <label id="inputLabel">Digite seu texto</label>
+                    <textarea id="translatorInput" placeholder="Olá mundo..."></textarea>
+                    <div class="panel-actions">
+                        <button class="action-btn" id="clearBtn">LIMPAR</button>
+                        <button class="action-btn" id="copyInputBtn">COPIAR</button>
+                    </div>
+                </div>
+                <div class="translator-arrow">
+                    <svg viewBox="0 0 24 24"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg>
+                </div>
+                <div class="translator-panel">
+                    <label id="outputLabel">Código Morse</label>
+                    <div id="translatorOutput" class="morse-output">
+                        <span class="output-placeholder">A tradução aparece aqui...</span>
+                    </div>
+                    <div class="panel-actions">
+                        <button class="action-btn" id="playBtn">▶ OUVIR</button>
+                        <button class="action-btn" id="copyOutputBtn">COPIAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABELAS -->
+    <section id="tabelas" class="content-section">
+        <div class="section-header">
+            <span class="section-tag">REFERÊNCIA</span>
+            <h2>TABELAS DE REFERÊNCIA</h2>
+            <div class="underline-accent"></div>
+            <p class="section-intro">Clique em qualquer célula para ouvir o som do caractere em Código Morse.</p>
+        </div>
+        <div class="tables-wrapper">
+            <div class="table-block">
+                <h3>ALFABETO</h3>
+                <div class="morse-table" id="alphabetTable"></div>
+            </div>
+            <div class="table-block">
+                <h3>NÚMEROS</h3>
+                <div class="morse-table" id="numbersTable"></div>
+            </div>
+            <div class="table-block table-block-full">
+                <h3>PONTUAÇÃO E SINAIS ESPECIAIS</h3>
+                <div class="morse-table" id="punctTable"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section id="historia" class="content-section">
+        <div class="section-header">
+            <span class="section-tag">ORIGENS</span>
+            <h2>A HISTÓRIA DO CÓDIGO MORSE</h2>
+            <div class="underline-accent"></div>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item tl-left">
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1791</div>
+                        <h3>O NASCIMENTO DE SAMUEL MORSE</h3>
+                        <p>Samuel Finley Breese Morse nasce em Charlestown, Massachusetts. Filho de pastor calvinista, crescerá para se tornar pintor renomado — antes de mudar a história da comunicação.</p>
+                    </div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline1.jpg" alt="Imagem 1" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-right">
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline2.jpg" alt="Imagem 2" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1825</div>
+                        <h3>O TELEGRAMA QUE MUDOU TUDO</h3>
+                        <p>Enquanto pintava em Washington, Morse recebe a notícia da morte de sua esposa por carta — dias após o falecimento. A lentidão da comunicação o devastou. Jurou criar algo mais rápido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-left">
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1832</div>
+                        <h3>A IDEIA NA TRAVESSIA DO ATLÂNTICO</h3>
+                        <p>No navio Sully, voltando da Europa, Morse conhece Charles Thomas Jackson. Durante a viagem, concebe os princípios básicos do telégrafo elétrico.</p>
+                    </div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline3.jpg" alt="Imagem 3" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-right">
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline4.jpg" alt="Imagem 4" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1836</div>
+                        <h3>O PRIMEIRO TELÉGRAFO</h3>
+                        <p>Com a ajuda de Alfred Vail, Morse constrói o primeiro telégrafo funcional. Vail contribui decisivamente para o refinamento do código, criando as sequências que usamos até hoje.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-left">
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1844</div>
+                        <h3>"WHAT HATH GOD WROUGHT"</h3>
+                        <p>Em 24 de maio, Morse transmite a primeira mensagem oficial pelo telégrafo, do Capitólio em Washington até Baltimore — 61 km percorridos em segundos.</p>
+                    </div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline5.jpg" alt="Imagem 5" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-right">
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline6.jpg" alt="Imagem 6" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1858</div>
+                        <h3>O CABO ATLÂNTICO</h3>
+                        <p>O primeiro cabo telegráfico transatlântico é instalado, conectando América do Norte e Europa. O Código Morse passa a cruzar oceanos, encolhendo o mundo de forma sem precedentes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-left">
+                <div class="tl-side tl-content-side">
+                    <div class="tl-text">
+                        <div class="tl-year">1906</div>
+                        <h3>SOS: O SINAL QUE SALVA VIDAS</h3>
+                        <p>A Conferência Internacional de Radiotelegrafia adota ··· ––– ··· como sinal universal de socorro. O SOS salvaria milhares de vidas, incluindo sobreviventes do Titanic em 1912.</p>
+                    </div>
+                </div>
+                <div class="tl-center"><div class="tl-dot"></div></div>
+                <div class="tl-side tl-img-side">
+                    <div class="tl-img"><img src="timeline7.jpg" alt="Imagem 7" onerror="this.style.display='none';this.parentNode.querySelector('span') && (this.parentNode.querySelector('span').style.display='flex')"><span style="display:none">📷 Imagem</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item tl-center-only">
+                <div class="tl-dot"></div>
+                <div class="tl-text tl-text-center">
+                    <div class="tl-year">Hoje</div>
+                    <h3>UM LEGADO VIVO</h3>
+                    <p>Embora substituído em comunicações profissionais, o Código Morse permanece em uso por radioamadores, forças militares e em emergências. É patrimônio cultural e técnico da humanidade.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CRÉDITOS -->
+    <section id="creditos" class="content-section">
+        <div class="section-header">
+            <span class="section-tag">SOBRE O PROJETO</span>
+            <h2>CRÉDITOS</h2>
+            <div class="underline-accent"></div>
+        </div>
+
+        <div class="creditos-wrapper">
+            <div class="creditos-main">
+                <div class="creditos-badge">
+                    <span class="creditos-morse">–·–· ––– –·· ·· ––· ––– / –– ––– ·–· ··· ·</span>
+                </div>
+                <div class="creditos-institution">
+                    <h3>ICMC — USP</h3>
+                    <p>Instituto de Ciências Matemáticas e de Computação</p>
+                    <p>Universidade de São Paulo — São Carlos</p>
+                </div>
+                <div class="creditos-course">
+                    <span class="creditos-tag-label">CURSO</span>
+                    <h4>Bacharelado em Sistemas de Informação</h4>
+                    <span class="creditos-turma">Turma 2026-1</span>
+                </div>
+                <div class="creditos-divider"></div>
+                <p class="creditos-desc">
+                    Este site foi desenvolvido como projeto acadêmico do curso de Bacharelado em Sistemas de Informação do ICMC-USP, com o objetivo de apresentar de forma interativa a história, o funcionamento e as aplicações do Código Morse — um dos sistemas de comunicação mais importantes da história humana.
+                </p>
+            </div>
+
+            <div class="creditos-team">
+                <h3>EQUIPE</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="foto1.jpg" alt="Joāo Vitor" onerror="this.style.display='none';this.parentNode.classList.add('no-photo')">
+                        </div>
+                        <span class="member-name">Joāo Vitor</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="foto2.jpg" alt="Emerson" onerror="this.style.display='none';this.parentNode.classList.add('no-photo')">
+                        </div>
+                        <span class="member-name">Emerson</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="foto3.jpg" alt="Roger" onerror="this.style.display='none';this.parentNode.classList.add('no-photo')">
+                        </div>
+                        <span class="member-name">Roger</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="foto4.jpg" alt="Matheus" onerror="this.style.display='none';this.parentNode.classList.add('no-photo')">
+                        </div>
+                        <span class="member-name">Matheus</span>
+                    </div>
+                </div>
+                <p class="creditos-orientador">Orientado por: <strong>Prof. Cláudio Fabiano Motta Toledo</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="site-footer">
+        <p>© 2026 · ICMC USP · Bacharelado em Sistemas de Informação · Turma 2026-1</p>
+    </div>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="backToTop" aria-label="Voltar ao início">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
